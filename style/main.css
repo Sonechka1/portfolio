@@ -339,3 +339,62 @@ h1{
  transition: ease-in 1s;  
  opacity: 0.8; 
 }
+
+/********skills***********/
+.skills__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.el {
+    position: absolute;
+    /* top: 0; */
+    display: block;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background-color: #693b93;
+    bottom: 45%;
+
+    border: 1px solid #693b93;
+    box-shadow:0 0 40px #693b93;
+ 
+}
+.el1 {
+    border: 1.3px solid #693b93;
+    border-radius: 60%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    padding: 8rem;
+    transform: rotate3d(1, 2, -1, 45deg);
+    z-index: -1;
+    box-shadow:0 0 20px #693b93;
+   
+  
+    
+}
+.el2 {
+    border: 1px solid #693b93;
+    border-radius: 70%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+    z-index: -1;
+    box-shadow:0 0 15px #693b93;
+}
+.el3 {
+    border: 1px solid #693b93;
+    border-radius: 50%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+    z-index: -1;
+    box-shadow:0 0 10px #693b93;
+    
+}
