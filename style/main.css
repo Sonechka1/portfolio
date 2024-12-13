@@ -24,6 +24,7 @@ html { font-size: 100%;
     --second-family: "Preahvihear", sans-serif;
     --third-family: "Plus Jakarta Sans", sans-serif;
 }
+
 .container{
     max-width: calc(var( --container-width) + var(--container-padding-x) *2 );
     margin-inline: auto;
@@ -340,36 +341,81 @@ h1{
  transition: ease-in 1s;  
  opacity: 0.8; 
 }
+.hidden{
+    display: none;
+}
 
 /********skills***********/
 .skills__wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
-    position: relative;
     
 }
+.skills{ 
+    
+}
+.skills__list {
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
 
+}
+.skills__item {
+    list-style: none;
+    padding: 0.5rem;
+    background-color: #643e7d;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: ease-in 1s;
+    
+}
+.skills__item:hover{
+    transition: ease-in .6s;
+    transform: scale(1.4);
+    
+}
+.skills__img {
+    width: 3rem;
+}
+.skills__wrapper_img{
+    
+    position: relative;
+    z-index: -1;
+    
+}
+.figma{
+    
+    /* left: 36.5%;
+    top: 2%;
+} */}
 .el {
-    position: absolute;
-    /* top: 0; */
+   
     display: block;
-    width: 12rem;
-    height: 12rem;
+    width:15rem;
+    height: 15rem;
     border-radius: 50%;
     background-color: #693b93;
     bottom: 45%;
-
     border: 1px solid #693b93;
-    box-shadow:0 0 40px rgb(113, 64, 158),
-    0 0 100px #c6a0e9,
-    0 0 150px #c6a0e9,
-    0 0 200px #4d1c6e,
-    0 0 300px #0c0b0d,
-    0 0 300px #0c0b0d;
-
- 
+    animation-name: min-to-max;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    box-shadow: 0 0 40px rgb(113, 64, 158), 0 0 100px #c6a0e9, 0 0 150px #c6a0e9, 0 0 200px #4d1c6e, 0 0 300px #0c0b0d, 0 0 300px #0c0b0d;
 }
+@keyframes min-to-max {
+    0% {
+      transform: scaleX(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+        transform: scaleX(1);
+      }
+  }
 .el1 {
     border: 1.3px solid #693b93;
     border-radius: 60%;
@@ -405,4 +451,12 @@ h1{
     z-index: -1;
     box-shadow:0 0 10px #693b93;
     
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20rem;
+    position: absolute;
+    z-index: 0;
 }
