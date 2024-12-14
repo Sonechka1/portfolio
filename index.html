@@ -14,12 +14,12 @@
             <ul class="header__list">
                 <li class="header__item"><a href="index.html" class="header__link">Home</a></li>
                 <li class="header__item"><a href="about.html" class="header__link">About</a></li>
-                <li class="header__item"><a href="#" class="header__link">Lab</a></li>
+                <li class="header__item mobile_hidden"><a href="#" class="header__link">Lab</a></li>
             </ul>
         </nav>
     </div>
     <section class="intro">
-        <div class="intro__wrapper container block1 content">
+        <div class="intro__wrapper container  content">
             <div class="intro_image__wrapper">
 
 
@@ -31,7 +31,7 @@
                 
                
                 
-                <div class="intro_image__description">
+                <div class="intro_image__description mobile_hidden">
                     <span class="name">Привет, я Софья <span></span>
                     <img src="img/1.png"  width="200" height="150" alt="">
                 </span>
@@ -47,9 +47,13 @@
                 <!-- <p>
                     Currently, I'm a Software Engineer at     Facebook,
                 </p> -->
-                <div class="intro_text__description">
+                <p>
                     Я — начинающий специалист, который активно изучает новые технологии и подходы в веб-разработке. Мой путь начался в колледже, и с тех пор я продолжаю развиваться в этой увлекательной сфере.
-                </div>
+
+                </p>
+                <!-- <div class="intro_text__description">
+                    Я — начинающий специалист, который активно изучает новые технологии и подходы в веб-разработке. Мой путь начался в колледже, и с тех пор я продолжаю развиваться в этой увлекательной сфере.
+                </div> -->
 
             </div>
         </div>
@@ -64,7 +68,7 @@
                 
                 <div class="card">
                     <div class="card__image">
-                        <a class="" href="https://sonechka1.github.io/Chess/">
+                        <a class="card__image--link" href="https://sonechka1.github.io/Chess/">
                             
                             <img  src="img/card/1.png" width="350" alt="">
                             <div class="layer"><p>Демо</p></div>
@@ -85,7 +89,7 @@
 
                 <div class="card">
                     <div class="card__image">
-                        <a class="" href="https://sonechka1.github.io/Hous/">
+                        <a class="card__image--link" href="https://sonechka1.github.io/Hous/">
                             <img src="img/card/2.png" width="350" alt="">
                             <div class="layer"><p>Демо</p></div>
                             
@@ -108,7 +112,7 @@
            
                 <div class="card">
                     <div class="card__image">
-                        <a class="" href="https://sonechka1.github.io/Grow/">
+                        <a class="card__image--link" href="https://sonechka1.github.io/Grow/">
                             
                             <img src="img/card/8.png" width="350" alt="">
                             <div class="layer"><p>Демо</p></div>
@@ -129,7 +133,7 @@
 
                 <div class="card">
                     <div class="card__image">
-                       <a class="" href="https://spaproject.onrender.com/">
+                       <a class="card__image--link" href="https://spaproject.onrender.com/">
                         
                            <img src="img/card/7.png" width="350" alt="">
                            <div class="layer"><p>Демо</p></div>
@@ -151,7 +155,7 @@
 
                 <div class="card">
                     <div class="card__image">
-                        <a class="" href="https://sonechka1.github.io/Modimal/">
+                        <a class="card__image--link" href="https://sonechka1.github.io/Modimal/">
 
                             <img src="img/card/5.png" width="350" alt="">
                             <div class="layer"><p>Демо</p></div>
@@ -173,7 +177,7 @@
 
                 <div class="card">
                     <div class="card__image">
-                        <a class="" href="https://sonechka1.github.io/crm/">
+                        <a class="card__image--link" href="https://sonechka1.github.io/crm/">
                             
                             <img src="img/card/6.png" width="350" alt="">
                             <div class="layer"><p>Демо</p></div>
@@ -196,7 +200,7 @@
 
                 <div class="card hidden">
                     <div class="card__image">
-                        <a class="" href="https://sonechka1.github.io/Weather/">
+                        <a class="card__image--link" href="https://sonechka1.github.io/Weather/">
                             <img src="img/card/4.png" width="350" alt="">
                             <div class="layer"><p>Демо</p></div>
                         </a>
@@ -217,7 +221,7 @@
                 <div class="card hidden">
                     <div class="card__image">
 
-                        <a class="" href="https://sonechka1.github.io/Robin/">
+                        <a class="card__image--link" href="https://sonechka1.github.io/Robin/">
                             <img src="img/card/3.png" width="350" alt="">
                             <div class="layer"><p>Демо</p></div>
                         </a>
@@ -237,7 +241,7 @@
                             
                 <div class="card hidden">
                     <div class="card__image">
-                        <a class="" href="https://sonechka1.github.io/ToDo/">
+                        <a class="card__image--link" href="https://sonechka1.github.io/ToDo/">
                             
                             <img src="img/card/9.png" width="350" alt="">
                             <div class="layer"><p>Демо</p></div>
@@ -269,29 +273,30 @@
 
     <section class="skills">
         <div class="skills__wrapper">
-            <img  class="skills__wrapper_img" src="img/Group 74.svg" width="1300" alt="">
+            <img  class="skills__wrapper_img mobile_hidden" src="img/Group 74.svg" width="1300" alt="">
             <div class="center">
+                <h2 class="skills__list--title">Навыки</h2>
                 <ul class="skills__list">
                     <li class="skills__item">
-                        <img class="skills__img figma" src="img/icon/figma.png" alt="">
+                        <img class="skills__img " src="img/icon/figma.png" alt="">
                     </li>
                     <li class="skills__item">
-                        <img class="skills__img figma" src="img/icon/html.png" alt="">
+                        <img class="skills__img " src="img/icon/html.png" alt="">
                     </li>
                     <li class="skills__item">
-                        <img class="skills__img figma" src="img/icon/css-3.png" alt="">
+                        <img class="skills__img " src="img/icon/css-3.png" alt="">
                     </li>
                     <li class="skills__item">
-                        <img class="skills__img figma" src="img/icon/java-script.png" alt="">
+                        <img class="skills__img " src="img/icon/java-script.png" alt="">
                     </li>
                     <li class="skills__item">
-                        <img class="skills__img figma" src="img/icon/react.png" alt="">
+                        <img class="skills__img " src="img/icon/react.png" alt="">
                     </li>
                     <li class="skills__item">
-                        <img class="skills__img figma" src="img/icon/sql-server.png" alt="">
+                        <img class="skills__img " src="img/icon/sql-server.png" alt="">
                     </li>
                 </ul>
-                <div class="el"><p>Навыки</p></div>
+                <div class="el mobile_hidden"><p>Навыки</p></div>
             </div>
            
 
