@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/main.css">
     <link rel="icon" href="kitty.png" type="image/x-icon">
     <script src="app.js" defer></script>
@@ -12,54 +15,73 @@
     <div class="header ">
         <nav class="header__nav">
             <ul class="header__list">
-                <li class="header__item"><a href="index.html" class="header__link">Home</a></li>
-                <li class="header__item"><a href="about.html" class="header__link">About</a></li>
-                <li class="header__item mobile_hidden"><a href="#" class="header__link">Lab</a></li>
+                <li class="header__item"><a href="#home" class="header__link">Home</a></li>
+                <li class="header__item"><a href="#project" class="header__link">Project</a></li>
+                <li class="header__item"><a href="#contact" class="header__link">Contact</a></li>
             </ul>
         </nav>
     </div>
-    <section class="intro">
+    <div class="btn-up btn-up_hide"></div>
+
+    <section id="home" class="intro ">
         <div class="intro__wrapper container  content">
             <div class="intro_image__wrapper">
 
-
-
                 <div class="img_intro">
-                    <img class="" src="img/i.jpg" alt="" width="300" height="300">
+                    <img class="" src="img/me.jpg" alt="me">
+             
+                   
                 </div>
-                
-                
-               
-                
-                <div class="intro_image__description mobile_hidden">
-                    <span class="name">Привет, я Софья <span></span>
-                    <img src="img/1.png"  width="200" height="150" alt="">
-                </span>
-                    <p>Создатель цифровых решений</p>
-                    <h2>Каждый проект — это новая  <span class="highlight">история</span> ...</h2> 
-                    <p> которая начинается с идеи</p>
+
+                <div class="intro_image__description ">
+                    <div class="intro_image--text-wrapper">
+                        <h2  class="name">Привет, я Софья!</h2> 
+                        <p class="italic">Фронтенд-разработчик.</p>
+                        <p class="italic">Создатель цифровых решений.</p>
+                    </div>
+                    
+                    <div class="intro_text__wrapper mobile_hidden">
+            
+                        <p>
+                            Я — начинающий специалист, который активно изучает новые технологии и подходы в веб-разработке. Мой путь начался в колледже, и с тех пор я продолжаю развиваться в этой увлекательной сфере.
+                        </p>
+        
+                    </div>
+                    <button class="education-btn">
+                        <p>Образование</p> 
+                    </button>
                 </div>
             </div>
-            <div class="intro_text__wrapper">
-                <h1>
-                    Я фронтенд-разработчик
-                </h1>
-                <!-- <p>
-                    Currently, I'm a Software Engineer at     Facebook,
-                </p> -->
-                <p>
-                    Я — начинающий специалист, который активно изучает новые технологии и подходы в веб-разработке. Мой путь начался в колледже, и с тех пор я продолжаю развиваться в этой увлекательной сфере.
 
-                </p>
-                <!-- <div class="intro_text__description">
-                    Я — начинающий специалист, который активно изучает новые технологии и подходы в веб-разработке. Мой путь начался в колледже, и с тех пор я продолжаю развиваться в этой увлекательной сфере.
-                </div> -->
+           
+
+            <div class="education container hidden">
+
+                <div class="row">
+                    <div class="education_colunn">
+                        <p class="education__title italic">Среднее-профессиональное:</p>
+                    </div>
+                    <div class="education_colunn">
+                        <p>Колледж "Царицыно". Специальность: "Информационные системы и программирование"</p>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="education_colunn">
+                        <p class="education__title italic">Высшее образование:</p>
+                    </div>
+                    <div class="education_colunn">
+                        <p>В процессе обучения: 1 курс Московского Политехнического Универститета. Специальность: "Автоматизированные системы обработки информации и управления"</p>
+                    </div>
+                </div>
 
             </div>
+            
         </div>
+        
     </section>
 
-    <section class="work ">
+    <section id="project" class="work ">
         
         <div class="work__wrapper container">
 
@@ -77,10 +99,10 @@
                     </div>
                     <div class="card__text">
                        <h3>
-                        Проект 1	
+                        Уездный город
                        </h3>
                        <p>
-                       Лендинг для тестового задания + адаптивная верстка  
+                       Лендинг. Адаптивная верстка.
                        </p>
                        <a class="card__btn" href="https://github.com/Sonechka1/Chess">GITHUB</a>
                     </div>
@@ -98,10 +120,10 @@
                     </div>
                     <div class="card__text">
                        <h3>
-                        Проетк 2
+                        Ink. House
                        </h3>
                        <p>
-                       Лендинг для учебного проекта + адаптивная верстка +  JS
+                       Лендинг. Адаптивная верстка. JS.
                         
                        </p>
                        <a class="card__btn" href="https://github.com/Sonechka1/Hous">GITHUB</a>
@@ -120,10 +142,10 @@
                     </div>
                     <div class="card__text">
                        <h3>
-                        Проект 3	
+                      Grow
                        </h3>
                        <p>
-                        Учебный проект: параллакс + анимации 
+                        Параллакс. Анимации.
                         
                        </p>
                        <a class="card__btn" href="https://github.com/Sonechka1/Grow">GITHUB</a>
@@ -142,10 +164,10 @@
                     </div>
                     <div class="card__text">
                        <h3>
-                        Проект 4	
+                        Метр<sup>2</sup>
                        </h3>
                        <p>
-                        Учебный проект:JS + webpack сборка + работа с API 
+                        JS. Webpack сборка. API.
                         
                        </p>
                        <a class="card__btn" href="https://github.com/Sonechka1/spaProject">GITHUB</a>
@@ -163,10 +185,10 @@
                     </div>
                     <div class="card__text">
                        <h3>
-                        Проект 5		
+                       Modimal		
                        </h3>
                        <p>
-                        Учебный проект: верстка + gulp сборка + js
+                        Верстка. Gulp сборка. JS.
                         
                        </p>
                        <a class="card__btn" href="https://github.com/Sonechka1/Modimal">GITHUB</a>
@@ -185,10 +207,10 @@
                     </div>
                     <div class="card__text">
                        <h3>
-                        Проект 6
+                        CRM система
                        </h3>
                        <p>
-                        Учебный проект: crm система, js + MVC паттерн 
+                      JS. MVC паттерн.
                         
                        </p>
                        <a class="card__btn" href="https://github.com/Sonechka1/crm">GITHUB</a>
@@ -207,10 +229,10 @@
                     </div>
                     <div class="card__text">
                        <h3>
-                        Проект 7	
+                        Weather. MSC.	
                        </h3>
                        <p>
-                        Верстка с 3д эффектом: анимация + работа с canvas
+                        Верстка 3D. Анимация. Canvas.
                         
                        </p>
                        <a class="card__btn" href="https://github.com/Sonechka1/Weather">GITHUB</a>
@@ -228,10 +250,10 @@
                     </div>
                     <div class="card__text">
                        <h3>
-                        Проект 8		
+                        PRODUCTION	
                        </h3>
                        <p>
-                        Учебный проект: БЭМ + SCSS
+                        БЭМ. SCSS.
                         
                        </p>
                        <a class="card__btn" href="https://github.com/Sonechka1/Robin">GITHUB</a>
@@ -250,10 +272,10 @@
                     </div>
                     <div class="card__text">
                        <h3>
-                       Проект 9	
+                       ToDo
                        </h3>
                        <p>
-                        Учебный проект: js + работа с localSrotage
+                       JS. Работа с localSrotage.
                         
                        </p>
                        <a class="card__btn" href="https://github.com/Sonechka1/ToDo">GITHUB</a>
@@ -271,9 +293,79 @@
         </div>
     </section>
 
-    <section class="skills">
+    
+
+    <section id="contact" class="about container">
+        <div class="about__card">
+            <!-- <div class="about__card__image">
+                <img src="img/me.jpg" alt="">
+            </div> -->
+            <div class="about__card__table">
+                <h2 class="italic about__card__table--title">Контакты</h2>
+
+                <div class="row-contact">
+                    <div class="about__card_colunn">
+                        <p class="about__title italic">GitHub:</p>
+                    </div>
+                    <div class="about__card_colunn">
+                        <p><a href="https://github.com/Sonechka1?tab=repositories">Sonechka1</a></p>
+                    </div>
+                </div>
+
+                
+                <div class="row-contact">
+                    <div class="about__card_colunn">
+                        <p class="about__title italic">Telegram:</p>
+                    </div>
+                    <div class="about__card_colunn">
+                        <p><a href="https://t.me/brfsgvhh_1">@brfsgvhh_1</a></p>
+                    </div>
+                </div>
+                <div class="row-contact">
+                    <div class="about__card_colunn">
+                        <p class="about__title italic">Телефон:</p>
+                    </div>
+                    <div class="about__card_colunn">
+                        <p><a href="tel:+79379517842">8(937)-951-78-42</a></p>
+                    </div>
+                </div>
+
+               
+                <div class="row-contact">
+                    <div class="about__card_colunn">
+                        <p class="about__title italic">Почта:</p>
+                    </div>
+                    <div class="about__card_colunn">
+                        <p><a href="mailto:sofiagorbatova.14.04@gmail.com">sofiagorbatova.14.04@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <!-- <h2 class="italic">Образование</h2>
+                <div class="row">
+                    <div class="about__card_colunn">
+                        <p class="about__title italic">Среднее-профессиональное:</p>
+                    </div>
+                    <div class="about__card_colunn">
+                        <p>Колледж "Царицыно". Специальность: "Информационные системы и программирование"</p>
+                        
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="about__card_colunn">
+                        <p class="about__title italic">Высшее образование:</p>
+                    </div>
+                    <div class="about__card_colunn">
+                        <p>В процессе обучения: 1 курс Московского Политехнического Универститета. Специальность: "Автоматизированные системы обработки информации и управления"</p>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="skills container">
         <div class="skills__wrapper">
-            <img  class="skills__wrapper_img mobile_hidden" src="img/Group 74.svg" width="1300" alt="">
+            <img  class="skills__wrapper_img mobile_hidden" src="img/Group 75.svg" width="1300" alt="">
             <div class="center">
                 <h2 class="skills__list--title">Навыки</h2>
                 <ul class="skills__list">
@@ -312,8 +404,7 @@
             <!-- <img class="el" src="img/Ellipse 20.png" width="200px" alt=""> -->
 
            
-        </div>
-            
+        </div> 
     </section>
    
 </body>
