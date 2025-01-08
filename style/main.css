@@ -390,6 +390,7 @@ h1{
     font-family: var(--second-family);
     background-color: #3d2a16;
     color: #fff;
+    border: none;
     padding: 10px;
     cursor: pointer;
     max-width: 400px;
@@ -807,7 +808,7 @@ h1{
     
     }
     .about__card_colunn p {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
 
